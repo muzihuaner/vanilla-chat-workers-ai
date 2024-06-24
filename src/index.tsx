@@ -19,7 +19,7 @@ app.get("/", (c) => {
     
         <div
           className="flex-grow flex flex-col"
-          
+          style="max-width: 100%"
         >
             
           <div
