@@ -27,7 +27,7 @@ app.get("/", (c) => {
             className="flex-1 overflow-y-auto p-6 space-y-4 bg-white flex flex-col-reverse messages-container"
           ></div>
           <div className="px-6 py-2 bg-white shadow-up">
-          <button id="settingButton">聊天设置</button>
+
             <form className="flex items-center" id="chat-form">
               <textarea
                 id="message-input"
