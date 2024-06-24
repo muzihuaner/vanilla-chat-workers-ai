@@ -24,11 +24,13 @@ export const renderer = jsxRenderer(({ children, title }) => {
           referrerpolicy="no-referrer"
         />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+        
         {import.meta.env.PROD ? (
           <link href="/static/style.css" rel="stylesheet" />
         ) : (
           <link href="/src/style.css" rel="stylesheet" />
         )}
+        <link href="/static/my.css" rel="stylesheet" />
       </head>
       <body className="font-sans">{children}</body>
     </html>

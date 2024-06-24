@@ -823,23 +823,6 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-#settingButton{
-  border: 1px solid #333;
-  border-radius: 25px;
-  padding: 10px;
-  line-height:20px;
-}
-
-.settings{
-  display: none;
-}
-
-@media (max-width: 720px) {
-  .flex {
-    display: block;
-  }
-}
-
 .hover\:bg-gray-300:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
