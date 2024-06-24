@@ -16,15 +16,18 @@ app.get("/", (c) => {
   return c.render(
     <>
       <div className="flex h-screen bg-gray-200">
+    
         <div
           className="flex-grow flex flex-col"
-          style="max-width: calc(100% - 20rem)"
+          
         >
+            
           <div
             id="chat-history"
             className="flex-1 overflow-y-auto p-6 space-y-4 bg-white flex flex-col-reverse messages-container"
           ></div>
           <div className="px-6 py-2 bg-white shadow-up">
+          <button id="settingButton">聊天设置</button>
             <form className="flex items-center" id="chat-form">
               <textarea
                 id="message-input"
@@ -39,17 +42,18 @@ app.get("/", (c) => {
               </button>
             </form>
             <div className="text-xs text-gray-500 mt-2">
-              <p className="model-display">-</p>
+              <p className="model-display">-</p> 
               <input
                 type="hidden"
                 class="message-user message-assistant message-model"
               />
+               
             </div>
           </div>
         </div>
       
 
-        <div className="w-80 bg-chat-settings p-6 shadow-xl flex flex-col justify-between">
+        <div className=" bg-chat-settings p-6 shadow-xl flex flex-col justify-between settings" id="settingDiv">
           <div>
             <div className="mb-4">
               <h1 className="text-xl font-semibold">快点AI助手</h1>

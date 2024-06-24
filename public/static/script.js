@@ -244,3 +244,12 @@ document
     e.preventDefault();
     applyChatSettingChanges();
   });
+
+  document.getElementById('settingButton').addEventListener('click', function() {
+    var settingDiv = document.getElementById('settingDiv');
+    if (settingDiv.style.display === 'none' || settingDiv.style.display === '') {
+        settingDiv.style.display = 'block';
+    } else {
+        settingDiv.style.display = 'none';
+    }
+});
