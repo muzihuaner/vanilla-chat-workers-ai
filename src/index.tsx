@@ -29,13 +29,13 @@ app.get("/", (c) => {
               <textarea
                 id="message-input"
                 className="flex-grow m-2 p-2 border border-chat-border rounded shadow-sm placeholder-chat-placeholder"
-                placeholder="Type a message..."
+                placeholder="发送消息.."
               ></textarea>
               <button
                 type="submit"
                 className="m-2 px-4 py-2 bg-chat-button text-black rounded hover:bg-gray-300"
               >
-                Send
+                发送
               </button>
             </form>
             <div className="text-xs text-gray-500 mt-2">
@@ -47,19 +47,21 @@ app.get("/", (c) => {
             </div>
           </div>
         </div>
+      
+
         <div className="w-80 bg-chat-settings p-6 shadow-xl flex flex-col justify-between">
           <div>
             <div className="mb-4">
-              <h2 className="text-xl font-semibold">Chat Settings</h2>
+              <h1 className="text-xl font-semibold">快点AI助手</h1>
+              <h2 className="text-xl font-semibold">设置</h2>
               <p className="text-sm text-chat-helpertext mt-1">
-                Try out different models and configurations for your chat
-                application
+             尝试不同的模型和配置
               </p>
             </div>
             <form>
               <div className="mb-4">
                 <label className="block text-black text-sm font-bold mb-2">
-                  Model
+                 模型
                 </label>
                 <select
                   id="model-select"
@@ -68,26 +70,30 @@ app.get("/", (c) => {
               </div>
               <div className="mb-4">
                 <label className="block text-black text-sm font-bold mb-2">
-                  System Message
+                  提示词
                 </label>
                 <p className="text-sm text-chat-helpertext mb-2">
-                  Guides the tone of the response
+                  指导回答的方式
                 </p>
                 <textarea
                   id="system-message"
                   className="border border-chat-border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline"
-                  placeholder="Enter system message..."
+                  placeholder="输入提示词...例如 使用中文回答"
                 ></textarea>
               </div>
               <button
                 id="apply-chat-settings"
                 className="w-full px-4 py-2 bg-chat-apply text-white rounded hover:bg-gray-800 focus:outline-none focus:shadow-outline"
               >
-                Apply Changes
+                应用修改
               </button>
             </form>
           </div>
+          <p className=" text-gray-500 flex items-center justify-center"> 使用本服务请遵守<a href="https://www.gov.cn/zhengce/zhengceku/202307/content_6891752.htm">《生成式人工智能服务管理暂行办法》</a></p>
+          <div className=" text-center text-sm text-gray-500 flex items-center justify-center">服务生成的所有内容均由人工智能模型生成，其生成内容的准确性和完整性无法保证，不代表我们的态度或观点</div>
           <div className="mt-4 text-center text-sm text-gray-500 flex items-center justify-center">
+         
+          <br />
             <span className="mr-2 pt-2">Powered by</span>
             <a
               href="https://developers.cloudflare.com/workers-ai/"
